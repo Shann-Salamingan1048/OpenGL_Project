@@ -27,6 +27,24 @@
     <ClCompile Include="Phases\2. Triangle\tour2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Phases\3. Indices\tour3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Phases\4. Organizing\tour4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Phases\4. Organizing\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Phases\4. Organizing\vbo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Phases\4. Organizing\vao.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Phases\4. Organizing\ebo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Phases\Test_If_Working\testing.h">
@@ -38,5 +56,27 @@
     <ClInclude Include="Phases\2. Triangle\tour2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Phases\3. Indices\tour3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\4. Organizing\tour4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\4. Organizing\shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\4. Organizing\vbo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\4. Organizing\vao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\4. Organizing\ebo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Phases\4. Organizing\default.vert" />
+    <None Include="Phases\4. Organizing\default.frag" />
   </ItemGroup>
 </Project>

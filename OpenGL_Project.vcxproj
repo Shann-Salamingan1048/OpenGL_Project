@@ -139,11 +139,27 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Phases\1. Window\tour1.cpp" />
     <ClCompile Include="Phases\2. Triangle\tour2.cpp" />
+    <ClCompile Include="Phases\3. Indices\tour3.cpp" />
+    <ClCompile Include="Phases\4. Organizing\ebo.cpp" />
+    <ClCompile Include="Phases\4. Organizing\shader.cpp" />
+    <ClCompile Include="Phases\4. Organizing\tour4.cpp" />
+    <ClCompile Include="Phases\4. Organizing\vao.cpp" />
+    <ClCompile Include="Phases\4. Organizing\vbo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Phases\1. Window\tour1.h" />
     <ClInclude Include="Phases\2. Triangle\tour2.h" />
+    <ClInclude Include="Phases\3. Indices\tour3.h" />
+    <ClInclude Include="Phases\4. Organizing\ebo.h" />
+    <ClInclude Include="Phases\4. Organizing\shader.h" />
+    <ClInclude Include="Phases\4. Organizing\tour4.h" />
+    <ClInclude Include="Phases\4. Organizing\vao.h" />
+    <ClInclude Include="Phases\4. Organizing\vbo.h" />
     <ClInclude Include="Phases\Test_If_Working\testing.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Phases\4. Organizing\default.frag" />
+    <None Include="Phases\4. Organizing\default.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
