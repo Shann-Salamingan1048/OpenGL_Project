@@ -78,6 +78,14 @@
     <IncludePath>$(SolutionDir)Libraries\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -104,6 +112,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -132,21 +141,27 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ebo.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Phases\1. Window\tour1.cpp" />
     <ClCompile Include="Phases\2. Triangle\tour2.cpp" />
     <ClCompile Include="Phases\3. Indices\tour3.cpp" />
-    <ClCompile Include="Phases\4. Organizing\ebo.cpp" />
-    <ClCompile Include="Phases\4. Organizing\shader.cpp" />
     <ClCompile Include="Phases\4. Organizing\tour4.cpp" />
-    <ClCompile Include="Phases\4. Organizing\vao.cpp" />
-    <ClCompile Include="Phases\4. Organizing\vbo.cpp" />
+    <ClCompile Include="Phases\5. Shaders\tour5.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="stb.cpp" />
+    <ClCompile Include="Phases\6. Textures\tour6.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="vao.cpp" />
+    <ClCompile Include="vbo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ebo.h" />
     <ClInclude Include="Phases\1. Window\tour1.h" />
     <ClInclude Include="Phases\2. Triangle\tour2.h" />
     <ClInclude Include="Phases\3. Indices\tour3.h" />
@@ -155,11 +170,28 @@
     <ClInclude Include="Phases\4. Organizing\tour4.h" />
     <ClInclude Include="Phases\4. Organizing\vao.h" />
     <ClInclude Include="Phases\4. Organizing\vbo.h" />
+    <ClInclude Include="Phases\5. Shaders\ebo5.h" />
+    <ClInclude Include="Phases\5. Shaders\shader5.h" />
+    <ClInclude Include="Phases\5. Shaders\tour5.h" />
+    <ClInclude Include="Phases\5. Shaders\vao5.h" />
+    <ClInclude Include="Phases\5. Shaders\vbo5.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Phases\6. Textures\tour6.h" />
     <ClInclude Include="Phases\Test_If_Working\testing.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="vao.h" />
+    <ClInclude Include="vbo.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Phases\4. Organizing\default.frag" />
     <None Include="Phases\4. Organizing\default.vert" />
+    <None Include="Phases\5. Shaders\default.frag" />
+    <None Include="Phases\5. Shaders\default.vert" />
+    <None Include="Phases\6. Textures\default.frag" />
+    <None Include="Phases\6. Textures\default.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Phases\6. Textures\images\pop_cat.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

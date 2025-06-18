@@ -33,16 +33,28 @@
     <ClCompile Include="Phases\4. Organizing\tour4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Phases\4. Organizing\shader.cpp">
+    <ClCompile Include="Phases\5. Shaders\tour5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Phases\4. Organizing\vbo.cpp">
+    <ClCompile Include="vbo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Phases\4. Organizing\vao.cpp">
+    <ClCompile Include="ebo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Phases\4. Organizing\ebo.cpp">
+    <ClCompile Include="shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vao.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Phases\6. Textures\tour6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,24 +71,66 @@
     <ClInclude Include="Phases\3. Indices\tour3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Phases\4. Organizing\tour4.h">
+    <ClInclude Include="Phases\4. Organizing\ebo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Phases\4. Organizing\shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Phases\4. Organizing\vbo.h">
+    <ClInclude Include="Phases\4. Organizing\tour4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Phases\4. Organizing\vao.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Phases\4. Organizing\ebo.h">
+    <ClInclude Include="Phases\4. Organizing\vbo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\5. Shaders\ebo5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\5. Shaders\shader5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\5. Shaders\tour5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\5. Shaders\vao5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\5. Shaders\vbo5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ebo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vbo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Phases\6. Textures\tour6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Phases\4. Organizing\default.vert" />
     <None Include="Phases\4. Organizing\default.frag" />
+    <None Include="Phases\4. Organizing\default.vert" />
+    <None Include="Phases\5. Shaders\default.vert" />
+    <None Include="Phases\5. Shaders\default.frag" />
+    <None Include="Phases\6. Textures\default.vert" />
+    <None Include="Phases\6. Textures\default.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Phases\6. Textures\images\pop_cat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

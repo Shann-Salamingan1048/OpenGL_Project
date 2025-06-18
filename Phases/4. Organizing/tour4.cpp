@@ -21,7 +21,7 @@ void run4()
 	glViewport(0, 0, 800, 800);
 	
 	Shader shader("Phases/4. Organizing/default.vert", "Phases/4. Organizing/default.frag");
-	// Baliktad
+	// Square
 	GLfloat vertices[] =
 	{
 		-0.5f, 0.5f, 0.0f, // 0
@@ -61,7 +61,7 @@ void run4()
 	VBO vbo(vertices, sizeof(vertices));
 	EBO ebo(indices, sizeof(indices));
 	
-	vao.LinkVBO(vbo, 0);
+	vao.LinkAttrib(vbo, 0);
 
 	vao.Unbind();
 	vbo.Unbind();
